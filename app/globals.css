@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../components/images/first.webp");
+  background-size: cover;
+  
+  @apply text-gray-500 m-8 bg-fixed ;
+  
+}
+nav {
+  @apply
+  pb-4
+  border-b-2 border-gray-200 rounded-lg
+  flex justify-between items-center gap-5 
+  w-full p-5 box-border
+  my-10 mx-auto 
+  max-w-5xl;
+  background-color: rgb(232, 235, 239);
+}
+/* components/Navbar.module.css */
+
+.dropdown {
+  position: right;  
+  justify-content: flex-end;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
